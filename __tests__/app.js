@@ -6,12 +6,12 @@ var helpers = require('yeoman-test');
 describe('generator-vue-manager:app', () => {
   beforeAll(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true});
+      .withPrompts({projName: 'test1'});
   });
 
   it('creates files', () => {
     assert.file([
-      'dummyfile.txt'
+      'package.json'
     ]);
   });
 });
