@@ -1,6 +1,6 @@
 {
   "name": "generator-vue-manager",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "自动生成基于vue框架的管理后台风格项目",
   "homepage": "xxx",
   "author": {
@@ -8,14 +8,16 @@
     "email": "670644959@qq.com",
     "url": "https://github.com/coolriver"
   },
-  "files": [
-    "generators"
-  ],
   "main": "generators/index.js",
   "keywords": [
     "vue",
     "management",
     "yeoman-generator"
+  ],
+  "files": [
+    "app",
+    "page",
+    "generators"
   ],
   "devDependencies": {
     "babel-eslint": "^7.2.3",

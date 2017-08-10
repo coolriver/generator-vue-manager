@@ -63,7 +63,7 @@ module.exports = class extends Generator {
       {
         globOptions: {
           dot: true,
-          ignore: ['**/node_modules/**']
+          ignore: [this.templatePath('node_modules/**')]
         }
       }
     );
@@ -73,6 +73,6 @@ module.exports = class extends Generator {
     const { projName } = this.props;
     const distPath = path.resolve(this.destinationPath(projName));
     process.chdir(distPath);
-    // this.installDependencies({ bower: false });
+    this.installDependencies({ bower: false });
   }
 };
