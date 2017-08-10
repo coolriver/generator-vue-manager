@@ -1,4 +1,4 @@
-# generator-vue-manager [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-vue-manager [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  
 > 自动生成基于vue框架的管理后台风格项目
 
 ## Installation
@@ -32,7 +32,3 @@ MIT © [coolriver](https://github.com/coolriver)
 [npm-url]: https://npmjs.org/package/generator-vue-manager
 [travis-image]: https://travis-ci.org/coolriver/generator-vue-manager.svg?branch=master
 [travis-url]: https://travis-ci.org/coolriver/generator-vue-manager
-[daviddm-image]: https://david-dm.org/coolriver/generator-vue-manager.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/coolriver/generator-vue-manager
-[coveralls-image]: https://coveralls.io/repos/coolriver/generator-vue-manager/badge.svg
-[coveralls-url]: https://coveralls.io/r/coolriver/generator-vue-manager
