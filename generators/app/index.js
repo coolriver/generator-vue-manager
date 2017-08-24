@@ -63,10 +63,12 @@ module.exports = class extends Generator {
       {
         globOptions: {
           dot: true,
-          ignore: [this.templatePath('node_modules/**')]
+          ignore: [this.templatePath('node_modules/**'), 'static/*.ico']
         }
       }
     );
+
+    this.fs.copy(this.templatePath('static/*.ico'), path.resolve(distPath, 'static'));
   }
 
   install() {

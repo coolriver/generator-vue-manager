@@ -1,14 +1,14 @@
 /**
  * 左侧菜单配置选项, vue router会根据此配置生成应对的路由配置
+ *
+ * 下面的常量是和路由的view相关的，因为菜单里需要配置对应的view，所以为了维护方便，把view相关的也放在这个配置文件中
  */
 
+const General = resolve => require(['@/views/general'], resolve);
+const Menu1 = resolve => require(['@/views/menu1'], resolve);
+const Menu2 = resolve => require(['@/views/menu2'], resolve);
 
-// 下面的常量是和路由的view相关的，因为菜单里需要配置对应的view，所以为了维护方便，把view相关的也放在这个配置文件中
-const General = resolve => import('@/views/general').then(resolve);
-const Menu1 = resolve => import('@/views/menu1').then(resolve);
-const Menu2 = resolve => import('@/views/menu2').then(resolve);
-
-export default {
+module.exports = {
   indexRedirect: '/general',
   list: [
     {

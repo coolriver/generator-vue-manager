@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon build/dev-server.js --ignore src",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "addPage": "yo vue-manager:page",
+    "addMenu": "yo vue-manager:menu"
   },
   "dependencies": {
     "axios": "^0.16.0",
@@ -21,6 +23,8 @@
     "vuex": "^2.2.1"
   },
   "devDependencies": {
+    "generator-vue-manager": "*",
+    "yo": "*",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
