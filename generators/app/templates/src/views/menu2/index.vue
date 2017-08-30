@@ -10,7 +10,7 @@
         <Button type="success" icon="android-add" class="menu2-add" @click="onClickAdd">添加用户</Button>
       </div>
       <div class="menu2-list">
-        <Table ref="tableList" :columns="columns" :data="list" stripe></Table>
+        <Table ref="tableList" :columns="columns" :data="tableData" stripe></Table>
         <Page :total="total" :page-size="pageSize" v-if="total > pageSize" show-elevator :current="curPage" @on-change="jumpPage"></Page>
       </div>
     </div>
