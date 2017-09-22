@@ -8,7 +8,7 @@ const General = resolve => require(['@/views/general'], resolve);
 const Menu1 = resolve => require(['@/views/menu1'], resolve);
 const Menu2 = resolve => require(['@/views/menu2'], resolve);
 
-module.exports = {
+const menuConf = {
   indexRedirect: '/general',
   list: [
     {
@@ -44,3 +44,5 @@ module.exports = {
     }
   ]
 };
+
+export default menuConf;

@@ -50,7 +50,7 @@ module.exports = class extends Generator {
 
     this.menuPath = menuPath;
     this.queryTree = queryTree;
-    this.menuList = queryTree.assignment('module.exports').value().key('list').nodes[0].elements; // 获取menu.list
+    this.menuList = queryTree.var('menuConf').value().key('list').nodes[0].elements; // 获取menu.list
     this.fistMenu = this.menuList
       .filter(item => item.properties.some(item => item.key.name === 'children')); // 过滤掉非二级菜单项
     this.menus = this.fistMenu
@@ -119,7 +119,7 @@ module.exports = class extends Generator {
     insertAssign(queryTree.tree.body, insertDeclare.body[0]);
 
     if (pageMenu === FIRST_MENU) { // 一级页面
-      queryTree.assignment('module.exports').value().key('list').push(`\
+      queryTree.var('menuConf').value().key('list').push(`\
         {
           title: '${pageTitle}',\
           icon: 'ios-star',\
