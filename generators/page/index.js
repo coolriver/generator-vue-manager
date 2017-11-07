@@ -142,7 +142,7 @@ module.exports = class extends Generator {
 
       console.log(`index*************************************: ${menuIndex}`);
 
-      queryTree.assignment('module.exports').value().key('list').at(menuIndex).key('children').push(`\
+      queryTree.var('menuConf').value().key('list').at(menuIndex).key('children').push(`\
         {
           title: '${pageTitle}',\
           routeLink: '${pageRoute}',\
