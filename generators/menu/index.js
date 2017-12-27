@@ -72,7 +72,7 @@ module.exports = class extends Generator {
       }
     );
 
-    queryTree.assignment('module.exports').value().key('list').push(`\
+    queryTree.var('menuConf').value().key('list').push(`\
       {
         title: '${menuName}',\
         icon: 'android-menu',\
